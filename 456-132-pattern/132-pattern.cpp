@@ -24,9 +24,9 @@ public:
                 x=s.top();
                 s.pop();
               }
-              int temp=nums[i];
+              
                
-                    s.push(temp);
+                    s.push(nums[i]);
                 
             
 
