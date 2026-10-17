@@ -26,17 +26,17 @@ for (int i = 0; i < n; i++)
         continue;
 
     int j = i;
-    int cycleLength = 0;
+    int c = 0;
 
     while (!vis[j])
     {
         vis[j] = true;
         j = m[j].second;
-        cycleLength++;
+        c++;
     }
 
-    if (cycleLength > 1)
-        count += cycleLength - 1;
+    if (c > 1)
+        count += c - 1;
 }
 
 return count;
