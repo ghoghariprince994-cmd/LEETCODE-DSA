@@ -1,8 +1,8 @@
 class RecentCounter {
 public:
- vector<int>temp;
+
     RecentCounter() {
-        temp.resize(2);
+        
     }
    
     
@@ -10,9 +10,8 @@ public:
    
     int ping(int t) {
         q.push(t);
-        temp[0]=t-3000;
-        temp[1]=t;
-        while(q.front()<temp[0])
+        
+        while(q.front()<t-3000)
         {
           q.pop();
          
